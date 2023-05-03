@@ -6,7 +6,7 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 12:38:36 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/03 14:46:56 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/03 15:09:08 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,21 +17,40 @@
 
 int	main(void)
 {
-	int	integer1;
-	int	integer2;
+	int	var_alpha;
+	int	var_digit;
+	int	var_ascii;
+	int	var_negative;
 
-	integer1 = 45;
-	integer2 = 105;
-	printf("isalpha(%d): %d\n", integer1, isalpha(integer1));
-	printf("ft_isalpha(%d): %d\n", integer1, ft_isalpha(integer1));
-	printf("isalpha(%d): %d\n", integer2, isalpha(integer2));
-	printf("ft_isalpha(%d): %d\n", integer2, ft_isalpha(integer2));
-	printf("isdigit(%d): %d\n", integer1, isdigit(integer1));
-	printf("ft_isdigit(%d): %d\n", integer1, ft_isdigit(integer1));
-	printf("isdigit(%d): %d\n", integer2, isdigit(integer2));
-	printf("ft_isdigit(%d): %d\n", integer2, ft_isdigit(integer2));
-	printf("isalnum(%d): %d\n", integer1, isalnum(integer1));
-	printf("ft_isalnum(%d): %d\n", integer1, ft_isalnum(integer1));
-	printf("isalnum(%d): %d\n", integer2, isalnum(integer2));
-	printf("ft_isalnum(%d): %d\n", integer2, ft_isalnum(integer2));
+	var_alpha = 45;
+	var_digit = 105;
+	var_ascii = 127;
+	var_negative = -1;
+	printf("isalpha(%d): %d\n", var_alpha, isalpha(var_alpha));
+	printf("ft_isalpha(%d): %d\n", var_alpha, ft_isalpha(var_alpha));
+	printf("isalpha(%d): %d\n", var_digit, isalpha(var_digit));
+	printf("ft_isalpha(%d): %d\n", var_digit, ft_isalpha(var_digit));
+	printf("isalpha(%d): %d\n", var_ascii, isalpha(var_ascii));
+	printf("ft_isalpha(%d): %d\n", var_ascii, ft_isalpha(var_ascii));
+	printf("isalpha(%d): %d\n", var_negative, isalpha(var_negative));
+	printf("ft_isalpha(%d): %d\n", var_negative, ft_isalpha(var_negative));
+	printf("\n");
+	printf("isdigit(%d): %d\n", var_alpha, isdigit(var_alpha));
+	printf("ft_isdigit(%d): %d\n", var_alpha, ft_isdigit(var_alpha));
+	printf("isdigit(%d): %d\n", var_digit, isdigit(var_digit));
+	printf("ft_isdigit(%d): %d\n", var_digit, ft_isdigit(var_digit));
+	printf("isdigit(%d): %d\n", var_ascii, isdigit(var_ascii));
+	printf("ft_isdigit(%d): %d\n", var_ascii, ft_isdigit(var_ascii));
+	printf("isdigit(%d): %d\n", var_negative, isdigit(var_negative));
+	printf("ft_isdigit(%d): %d\n", var_negative, ft_isdigit(var_negative));
+	printf("\n");
+	printf("isalnum(%d): %d\n", var_alpha, isalnum(var_alpha));
+	printf("ft_isalnum(%d): %d\n", var_alpha, ft_isalnum(var_alpha));
+	printf("isalnum(%d): %d\n", var_digit, isalnum(var_digit));
+	printf("ft_isalnum(%d): %d\n", var_digit, ft_isalnum(var_digit));
+	printf("isalnum(%d): %d\n", var_ascii, isalnum(var_ascii));
+	printf("ft_isalnum(%d): %d\n", var_ascii, ft_isalnum(var_ascii));
+	printf("isalnum(%d): %d\n", var_negative, isalnum(var_negative));
+	printf("ft_isalnum(%d): %d\n", var_negative, ft_isalnum(var_negative));
+	printf("\n");
 }
