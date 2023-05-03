@@ -6,28 +6,26 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 12:38:36 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/03 15:12:15 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/03 17:33:51 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
 #include <ctype.h>
+#include <string.h>
+
 #include "libft.h"
 
 int	main(void)
 {
-	int	var_alpha;
-	int	var_digit;
-	int	var_ascii;
-	int	var_negative;
-	int	var_unprint;
+	int	var_alpha = 45;
+	int	var_digit = 105;
+	int	var_ascii = 127;
+	int	var_negative = -1;
+	int	var_unprint = 12;
+	char*	string = "lmao";
 
-	var_alpha = 45;
-	var_digit = 105;
-	var_ascii = 127;
-	var_negative = -1;
-	var_unprint = 12;
 	printf("isalpha(%d): %d\n", var_alpha, isalpha(var_alpha));
 	printf("ft_isalpha(%d): %d\n", var_alpha, ft_isalpha(var_alpha));
 	printf("isalpha(%d): %d\n", var_digit, isalpha(var_digit));
@@ -66,4 +64,9 @@ int	main(void)
 	printf("isprint(%d): %d\n", var_unprint, isprint(var_unprint));
 	printf("ft_isprint(%d): %d\n", var_unprint, ft_isprint(var_unprint));
 	printf("\n");
+	printf("strlen(%s): %lu\n", string, strlen(string));
+	printf("ft_strlen(%s): %lu\n", string, ft_strlen(string));
+	printf("\n");
+
+	return (0);
 }
