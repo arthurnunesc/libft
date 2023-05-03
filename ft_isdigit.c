@@ -6,7 +6,7 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 16:19:11 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/03 14:43:40 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/03 14:48:37 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ int	ft_isdigit(int c)
 
 	uc = c;
 	if (uc > 47 && uc < 58)
-	{
 		return (1);
-	}
 	return (0);
 }

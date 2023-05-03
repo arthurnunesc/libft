@@ -6,7 +6,7 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 12:38:36 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/03 13:04:26 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/03 14:46:56 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,8 @@ int	main(void)
 	printf("ft_isdigit(%d): %d\n", integer1, ft_isdigit(integer1));
 	printf("isdigit(%d): %d\n", integer2, isdigit(integer2));
 	printf("ft_isdigit(%d): %d\n", integer2, ft_isdigit(integer2));
+	printf("isalnum(%d): %d\n", integer1, isalnum(integer1));
+	printf("ft_isalnum(%d): %d\n", integer1, ft_isalnum(integer1));
+	printf("isalnum(%d): %d\n", integer2, isalnum(integer2));
+	printf("ft_isalnum(%d): %d\n", integer2, ft_isalnum(integer2));
 }
