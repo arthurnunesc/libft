@@ -6,16 +6,13 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 16:19:11 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/03 14:47:25 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/04 17:01:30 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalpha(int c)
 {
-	unsigned char	uc;
-
-	uc = c;
-	if ((uc > 64 && uc < 91) || (uc > 96 && uc < 123))
+	if ((c > 64 && c < 91) || (c > 96 && c < 123))
 		return (1);
 	return (0);
 }

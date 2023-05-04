@@ -1,18 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/02 16:19:11 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/04 17:03:13 by anunes-c         ###   ########.fr       */
+/*   Created: 2023/05/04 16:37:18 by anunes-c          #+#    #+#             */
+/*   Updated: 2023/05/04 17:00:29 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isascii(int c)
+#include <stdlib.h>
+
+void	*ft_memcpy(void *dst, const void *src, size_t len)
 {
-	if (c > -1 && c < 128)
-		return (1);
-	return (0);
+	size_t		i;
+	char		*new_dst;
+	const char	*new_src;
+
+	new_dst = dst;
+	new_src = src;
+	i = 0;
+	if (!dst && !src)
+		return (0);
+	while (i < len)
+	{
+		new_dst[i] = new_src[i];
+		i++;
+	}
+	return (dst);
 }
