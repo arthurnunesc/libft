@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: anunes-c <anunes-c@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/03 17:41:25 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/04 17:41:30 by anunes-c         ###   ########.fr       */
+/*   Created: 2023/05/04 18:02:39 by anunes-c          #+#    #+#             */
+/*   Updated: 2023/05/04 18:05:34 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void	*ft_memset(void *dest, int c, size_t len)
+size_t	ft_strlcpy(char *dest, char *src, size_t dstsize)
 {
-	size_t			i;
-	unsigned char	*uc_ptr;
-	unsigned char	uc;
+	unsigned int	i;
 
-	uc_ptr = (unsigned char *)dest;
-	uc = (unsigned char)c;
 	i = 0;
-	while (i < len)
+	if (dstsize > 0)
 	{
-		uc_ptr[i] = uc;
-		i++;
+		while (i < dstsize - 1 && src[i] != '\0')
+		{
+			dest[i] = src[i];
+			i++;
+		}
+		dest[i] = '\0';
 	}
-	return ((void *)uc_ptr);
+	while (src[i] != '\0')
+		i++;
+	return (i);
 }

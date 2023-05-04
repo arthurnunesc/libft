@@ -6,7 +6,7 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 12:50:30 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/04 16:54:49 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/04 18:04:57 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,19 +23,19 @@ size_t	ft_strlen(const char *s);
 void	*ft_memset(void *dest, int c, size_t len);
 void	ft_bzero(void *b, size_t len);
 void	*ft_memcpy(void *dst, const void *src, size_t len);
-int		ft_memmove(int c);
-int		ft_strlcpy(int c);
-int		ft_strlcat(int c);
+void	*ft_memmove(void *dst, const void *src, size_t len);
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-int		ft_strchr(int c);
-int		ft_strrchr(int c);
-int		ft_strncmp(int c);
-int		ft_memchr(int c);
-int		ft_memcmp(int c);
-int		ft_strnstr(int c);
-int		ft_atoi(int c);
-int		ft_calloc(int c);
-int		ft_strdup(int c);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+int		ft_strncmp(const char *s1, const char *s2, size_t len);
+void	*ft_memchr(const void *b, int c, size_t len);
+int		ft_memcmp(const void *b1, const void *b2, size_t len);
+char	*ft_strnstr(const char *big, const char *little);
+int		ft_atoi(const char *nptr);
+void	*ft_calloc(size_t number, size_t size);
+char	*ft_strdup(const char *str, size_t len);
 
 #endif
