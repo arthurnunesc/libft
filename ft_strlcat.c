@@ -6,16 +6,18 @@
 /*   By: anunes-c <anunes-c@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 14:50:37 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/03/01 13:12:19 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/05 15:53:26 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+#include <stdlib.h>
+
+size_t	ft_strlcat(char *dest, char *src, size_t dstsize)
 {
-	unsigned int	i;
-	unsigned int	j;
-	unsigned int	dstlen;
-	unsigned int	srclen;
+	size_t	i;
+	size_t	j;
+	size_t	dstlen;
+	size_t	srclen;
 
 	i = 0;
 	j = 0;
@@ -25,10 +27,10 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 		dstlen++;
 	while (src[srclen])
 		srclen++;
-	if (size <= dstlen || size == 0)
-		return (srclen + size);
+	if (dstsize <= dstlen || dstsize == 0)
+		return (srclen + dstsize);
 	i = dstlen;
-	while (src[j] && j < (size - dstlen - 1))
+	while (src[j] && j < (dstsize - dstlen - 1))
 	{
 		dest[i + j] = src[j];
 		j++;

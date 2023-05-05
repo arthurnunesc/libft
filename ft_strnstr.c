@@ -1,32 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anunes-c <anunes-c@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/26 13:48:51 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/02/27 16:36:42 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/05 16:00:26 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char *to_find)
+#include <stdlib.h>
+
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	unsigned int	i;
 	unsigned int	j;
 
 	i = 0;
 	j = 0;
-	if (to_find[0] == '\0')
-		return (str);
-	while (str[i])
+	if (little[0] == '\0')
+		return ((char *)big);
+	while (big[i])
 	{
-		if (str[i] == to_find[j])
+		if (big[i] == little[j])
 		{
-			while (to_find[j] && str[i + j] == to_find[j])
+			while (little[j] && big[i + j] == little[j])
 				j++;
-			if (to_find[j] == '\0')
-				return (&str[i]);
+			if (little[j] == '\0')
+				return (&(char *)big[i]);
 			j = 0;
 		}
 		i++;
