@@ -1,32 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anunes-c <anunes-c@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/04 18:02:39 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/05 18:34:11 by anunes-c         ###   ########.fr       */
+/*   Created: 2023/05/05 18:47:41 by anunes-c          #+#    #+#             */
+/*   Updated: 2023/05/05 18:49:03 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <libft.h>
 
-size_t	ft_strlcpy(char *dst, char *src, size_t dstsize)
+char	*ft_strdup(const char *str, size_t len)
 {
-	size_t	i;
+	char	*str_str;
 
-	i = 0;
-	if (dstsize > 0)
-	{
-		while (i < dstsize - 1 && src[i] != '\0')
-		{
-			dst[i] = src[i];
-			i++;
-		}
-		dst[i] = '\0';
-	}
-	while (src[i] != '\0')
-		i++;
-	return (i);
+	return (str_str);
 }
