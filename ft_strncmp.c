@@ -6,7 +6,7 @@
 /*   By: anunes-c <anunes-c@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/24 13:30:15 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/05 15:54:57 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/08 14:19:15 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,18 @@
 
 int	ft_strncmp(char *s1, char *s2, size_t len)
 {
-	size_t	i;
+	size_t			i;
+	unsigned char	*ucs1;
+	unsigned char	*ucs2;
 
 	i = 0;
+	ucs1 = (unsigned char *)s1;
+	ucs2 = (unsigned char *)s2;
 	if (len == 0)
 		return (0);
-	while (i < len && s1[i] && s2[i] && s1[i] == s2[i])
+	while (i < len && ucs1[i] && ucs2[i] && ucs1[i] == ucs2[i])
 		i++;
 	if (i == len)
 		i--;
-	return (s1[i] - s2[i]);
+	return (ucs1[i] - ucs2[i]);
 }
