@@ -6,9 +6,11 @@
 /*   By: anunes-c <anunes-c@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/28 19:08:18 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/08 18:51:47 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/08 23:34:18 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {
@@ -27,9 +29,9 @@ int	ft_atoi(const char *nptr)
 			signal = -1;
 		i++;
 	}
-	while (nptr[i] > 47 && nptr[i] < 58)
+	while (ft_isdigit(nptr[i]))
 	{
-		number = (number * 10) + (nptr[i] - '0');
+		number = (number * 10) + (nptr[i] - 48);
 		i++;
 	}	
 	return (number * signal);
