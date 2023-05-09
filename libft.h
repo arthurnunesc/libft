@@ -6,7 +6,7 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 12:50:30 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/05 19:06:57 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/09 12:33:48 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,6 @@ int		ft_memcmp(const void *b1, const void *b2, size_t len);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t number, size_t size);
-char	*ft_strdup(const char *str, size_t len);
+char	*ft_strdup(const char *str);
 
 #endif
