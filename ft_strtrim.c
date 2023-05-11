@@ -6,7 +6,7 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/11 13:43:26 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/11 15:53:26 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/11 22:59:04 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char			*trimmed;
 	unsigned int	start;
 	// unsigned int	len;
-
 	trimmed = 0;
 	start = ft_findfirstcharnotinset(s1, set);
 	// len = start - ft_findlastcharnotinset(s1, set);

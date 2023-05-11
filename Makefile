@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: anunes-c <anunes-c@student.42barcel>       +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/05/04 13:09:12 by anunes-c          #+#    #+#              #
+#    Updated: 2023/05/04 13:09:14 by anunes-c         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME = libft.a
 
 SRCS = $(wildcard *.c)
@@ -11,10 +23,10 @@ CFLAGS = -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
+	@ar rcs $(NAME) $(OBJS)
 
 %.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	@$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS)
