@@ -6,10 +6,11 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 16:26:18 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/09 16:39:12 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/15 18:57:46 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
