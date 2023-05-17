@@ -6,11 +6,11 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 17:15:56 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/08 17:20:00 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/18 00:48:35 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stddef.h>
 
 void	*ft_memchr(const void *b, int c, size_t len)
 {

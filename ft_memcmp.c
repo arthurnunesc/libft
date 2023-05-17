@@ -6,11 +6,11 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 17:36:55 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/08 17:43:03 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/18 00:49:28 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stddef.h>
 
 int	ft_memcmp(const void *b1, const void *b2, size_t len)
 {

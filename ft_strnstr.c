@@ -6,11 +6,11 @@
 /*   By: anunes-c <anunes-c@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/26 13:48:51 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/09 14:29:27 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/18 00:57:37 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stddef.h>
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

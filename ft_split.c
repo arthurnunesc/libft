@@ -6,11 +6,10 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 12:47:01 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/17 20:23:12 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/18 00:51:45 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include "libft.h"
 

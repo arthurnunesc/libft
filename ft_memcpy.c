@@ -6,11 +6,11 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 16:37:18 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/04 17:00:29 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/18 00:49:47 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stddef.h>
 
 void	*ft_memcpy(void *dst, const void *src, size_t len)
 {

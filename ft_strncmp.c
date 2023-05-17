@@ -6,11 +6,11 @@
 /*   By: anunes-c <anunes-c@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/24 13:30:15 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/08 14:19:15 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/18 00:57:29 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stddef.h>
 
 int	ft_strncmp(char *s1, char *s2, size_t len)
 {

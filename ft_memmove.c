@@ -6,11 +6,11 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/08 16:56:28 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/08 17:13:19 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/18 00:50:00 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stddef.h>
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

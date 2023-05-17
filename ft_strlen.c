@@ -6,15 +6,15 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/03 17:26:52 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/03 17:36:10 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/18 00:59:24 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stddef.h>
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	i;
+	unsigned int	i;
 
 	i = 0;
 	while (s[i])

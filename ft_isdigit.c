@@ -6,13 +6,11 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 16:19:11 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/04 17:01:45 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/18 00:47:40 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int c)
 {
-	if (c > 47 && c < 58)
-		return (1);
-	return (0);
+	return (c > 47 && c < 58);
 }

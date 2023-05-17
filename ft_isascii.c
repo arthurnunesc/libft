@@ -6,13 +6,11 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 16:19:11 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/04 17:03:13 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/18 00:47:03 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int c)
 {
-	if (c > -1 && c < 128)
-		return (1);
-	return (0);
+	return (c > -1 && c < 128);
 }

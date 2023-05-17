@@ -6,11 +6,11 @@
 /*   By: anunes-c <anunes-c@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/04 18:02:39 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/05 18:34:11 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/18 00:53:52 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stddef.h>
 
 size_t	ft_strlcpy(char *dst, char *src, size_t dstsize)
 {

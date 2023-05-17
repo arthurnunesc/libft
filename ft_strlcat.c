@@ -6,11 +6,11 @@
 /*   By: anunes-c <anunes-c@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/27 14:50:37 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/05 18:45:16 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/18 00:53:40 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include <stddef.h>
 
 size_t	ft_strlcat(char *dst, char *src, size_t dstsize)
 {
