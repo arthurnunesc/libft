@@ -6,7 +6,7 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 14:34:47 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/15 19:52:57 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/18 00:41:35 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,10 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;
-	size_t	i;
 	size_t	s_len;
 	size_t	malloc_size;
 
 	substr = 0;
-	i = 0;
 	s_len = ft_strlen(s);
 	if (len < s_len - start)
 		malloc_size = len + 1;
