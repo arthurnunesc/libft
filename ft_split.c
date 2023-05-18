@@ -6,7 +6,7 @@
 /*   By: anunes-c <anunesc-@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/17 12:47:01 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/18 00:51:45 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/18 20:29:07 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,10 @@ char	**ft_split(char const *s, char c)
 	char			*trimmed_s;
 	unsigned int	i;
 	unsigned int	j;
-	unsigned int	word_count;
 	unsigned int	list_index;
 
 	i = 0;
-	j = 0;
-	word_count = 1;
+	j = 1;
 	list_index = 0;
 	trimmed_s = ft_strtrim(s, &c);
 	while (trimmed_s[i])
@@ -46,15 +44,18 @@ char	**ft_split(char const *s, char c)
 		while (trimmed_s[i] == c)
 		{
 			if (trimmed_s[i + 1] != c)
-				word_count++;
+				j++;
 			i++;
 		}
 		i++;
 	}
-	i = 0;
-	list_of_words = (char **)ft_calloc(word_count + 1, sizeof(char *));
+// if (ft_strchr(s, c) == NULL)
+//		j = 0;
+	list_of_words = (char **)ft_calloc(j + 1, sizeof(char *));
 	if (list_of_words == NULL)
 		return (NULL);
+	i = 0;
+	j = 0;
 	while (i < ft_strlen(trimmed_s))
 	{
 		j = i;
@@ -70,6 +71,7 @@ char	**ft_split(char const *s, char c)
 		}
 		i++;
 	}
+	list_of_words[list_index] = NULL;
 	free(trimmed_s);
 	return (list_of_words);
 }
