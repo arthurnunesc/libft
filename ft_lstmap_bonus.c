@@ -6,10 +6,11 @@
 /*   By: anunes-c <anunesc-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 19:45:03 by anunes-c          #+#    #+#             */
-/*   Updated: 2023/05/29 19:50:06 by anunes-c         ###   ########.fr       */
+/*   Updated: 2023/05/29 20:13:37 by anunes-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
 #include "libft.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
@@ -27,6 +28,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		new_node = ft_lstnew(aux);
 		if (new_node == NULL)
 		{
+			free(aux);
 			ft_lstclear(&new_lst, del);
 			return (NULL);
 		}
